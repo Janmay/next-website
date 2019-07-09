@@ -1,0 +1,11 @@
+@import "../../style/mixins/index";
+
+// mixins for grid system
+// ------------------------
+@mixin makeRow($gutter: $grid-gutter-width) {
+  position: relative;
+  height: auto;
+  margin-right: ($gutter / -2);
+  margin-left: ($gutter / -2);
+  @include clearfix();
+}
